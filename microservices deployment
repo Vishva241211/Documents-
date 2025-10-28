@@ -1,2 +1,9 @@
 1.Copy volt-dev Jenkinsfile and check Dockerfile and create a new branch in name dev .
-2.Create a new 
+2.Create a new nexus reposity in nexus.
+3.Vault :
+  1).First create a screts.
+  2).Second create new policies.
+  3).Third create and create a new role.
+4.To go github yap-helm/yap/service change and edit values.yaml
+5.create new Argocd click new app and edit as yaml and past a yaml file.
+6.Jenkins create new pipeline . 
