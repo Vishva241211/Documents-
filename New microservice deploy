@@ -1,0 +1,10 @@
+1.Write Jenkinsfile and check a Dockerfile in github
+2.Create new Jenkins pipenline and mutlibranch pipeline 
+3.create new aws Elastics container registry in AWS
+4.create a new namespace in cluster ( kubectl create a ns crmd ).
+5.create a new helmchart in cluster ( helm create crmd -n crmd ).
+6.Edit values.yaml 
+8.Go to AWS route 53 (Go to click it datasirpi.com and create a record crmd.datasirpi.com ) and given a crmd.datasirpi.com in ingress.yaml  
+7.changes all a values Chart.yaml  crmd-be-values.yaml  crmd-fe-values.yaml  ingress.yaml  templates
+8.Install helm chart ( helm install crmd-fe -f crmd-fe-values.yaml -n crmd )
+9.kubectl get po -n crmd 
