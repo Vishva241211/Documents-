@@ -1,0 +1,12 @@
+Method 3: Using Ventoy (Best for multiple ISOs)
+1.If you want one USB where you can copy many ISOs:
+2.Install Ventoy: https://ventoy.net
+3.Create a Ventoy USB (one-click)
+4.Copy GParted ISO directly to the USB
+5.Boot — Ventoy shows a menu to select ISO
+
+step 2
+1.Download gparted
+
+step 3
+1.Download ubuntu
