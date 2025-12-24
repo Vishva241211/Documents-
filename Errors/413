@@ -1,1 +1,30 @@
+Increase limits in NGINX 
+
+add NGINX Ingress Annotations
+
+  apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-app-ingress
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: nginx
+
+    nginx.ingress.kubernetes.io/proxy-buffer-size: "16k"
+    nginx.ingress.kubernetes.io/proxy-buffers-number: "8"
+    nginx.ingress.kubernetes.io/client-header-buffer-size: "16k"
+    nginx.ingress.kubernetes.io/large-client-header-buffers: "4 16k"
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: myapp.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: my-app
+                port:
+                  number: 80
 
