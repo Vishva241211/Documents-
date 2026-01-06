@@ -1,0 +1,6 @@
+1.Go jenkins server 
+Then put this commands in server
+2.docker system prune -af(docker system prune -a)
+all images delete the images
+3.df -h
+   
